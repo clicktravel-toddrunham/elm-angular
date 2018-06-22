@@ -1,9 +1,9 @@
 # elm-angular
 
-Use can use this file to import elm modules (must be built into JS files) directly into cuckoo, so we can test them as a viable option going forward. Import it into the shared/directives folder and then import it into your apps `app.js` file. You'll also need to import the build file into a parent Elm file which is then imported via the app HTML like so:
+Use can use this file to import elm modules (must be built into JS files) directly into cuckoo, so we can test them as a viable option going forward. Import this module into the shared/directives folder and then import it into your apps `app.js` file for usage in your directives etc. You'll also need to import the built elm module via the app HTML like so:
 
 ```
-<script src="elm/main.js"></script>
+<script src="elm/[YOUR_MODULE].js"></script>
 <script>
   window.elm = Elm;
 </script>

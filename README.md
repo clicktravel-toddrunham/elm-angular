@@ -31,10 +31,10 @@ You can use ports to communicate between elm and angular, which this file is set
 You can use the ports in angular like so:
 
 ```
-$scope.fromJsToElm = 'This gets automatically sent to Elm!';
+$scope.fromJsToElm = 'This gets sent to Elm from angular';
 
 // The other direction
-$scope.fromElmToJs = function (msg) {
-  console.log(msg);
+$scope.fromElmToJs = function (msgFromElm) {
+  console.log(msgFromElm);
 }
 ```
